@@ -8,7 +8,7 @@
 			</pattern>
 		</encoder>
 	</appender>
-	<appender name="FILE" class="ch.qos.logback.core.FileAppender">		<file>/home/baiyanwei/research/moniotring/run/logs/myApp.log</file>		<encoder>			<pattern>%date %level [%thread] %logger{10} %msg%n			</pattern>		</encoder>	</appender>
+	<appender name="FILE" class="ch.qos.logback.core.FileAppender">		<file>/home/baiyanwei/secpro/project/run/logs/myApp.log</file>		<encoder>			<pattern>%date %level [%thread] %logger{10} %msg%n			</pattern>		</encoder>	</appender>
 	<root level="debug">
 		<appender-ref ref="STDOUT" />		<appender-ref ref="FILE" />
 	</root>

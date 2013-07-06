@@ -1,6 +1,7 @@
 -Declipse.ignoreApp=true -Dosgi.noShutdown=true
--DserviceConfigurationPath=/home/martin/research/monitoring/code/platform/pf-builder/configuration/config.xml
--DloggingConfigurationPath=/home/martin/research/monitoring/code/platform/pf-builder/configuration/logging.xml
+-Dosgi.console.enable.builtin=true
+-DserviceConfigurationPath=/home/baiyanwei/secpro/project/code/platform/pf-builder/configuration/config.xml
+-DloggingConfigurationPath=/home/baiyanwei/secpro/project/code/platform/pf-builder/configuration/logging.xml
 
 
 -Declipse.ignoreApp=true -Dosgi.noShutdown=true
