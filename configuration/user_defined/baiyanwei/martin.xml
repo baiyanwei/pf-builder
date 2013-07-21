@@ -1,0 +1,25 @@
+<mca>
+	<services>
+		<monitoringService>
+			<messageTimeout>120000</messageTimeout>
+			<operationCapabilities>snmp,ssh</operationCapabilities>
+			<fetchTSSTaskInterval>2000</fetchTSSTaskInterval>
+			<concurrentWorkflows>2</concurrentWorkflows>
+			<jmxObjectName>secpro:type=MonitoringService</jmxObjectName>
+		</monitoringService>
+		<StorageAdapterService>
+			<storageType>com.secpro.platform.monitoring.agent.storages.http.HTTPStorageAdapter</storageType>
+		</StorageAdapterService>
+		<HTTPStorageAdapter>
+			<hostName>localhost</hostName>
+			<hostPort>8888</hostPort>
+			<fetchTaskPath>/samples/fetch</fetchTaskPath>
+			<pushSamplePath>/samples/push</pushSamplePath>
+			<userName>MCA</userName>
+			<passWord>123456</passWord>
+		</HTTPStorageAdapter>
+		<MonitoringNodeService>
+			<nodeLocation>HB</nodeLocation>
+		</MonitoringNodeService>
+	</services>
+</mca>	
