@@ -1,12 +1,29 @@
 <mca>
 	<services>
-		<monitoringService>
+		<MonitoringTaskCacheService>
+			<taskPath>/home/baiyanwei/secpro/project/run/task/</taskPath>
+			<prefixTaskName>task</prefixTaskName>
+			<taskExecuteHour>21</taskExecuteHour>
+			<taskExecMin>45</taskExecMin>
+			<taskExecSec>0</taskExecSec>
+			<taskNameTimeFormat1>yyyyMMdd</taskNameTimeFormat1>
+			<taskNameTimeFormat2>yyyyMMddHHmmss</taskNameTimeFormat2>
+			<taskTimerExecuteInterval>120000</taskTimerExecuteInterval>
+		</MonitoringTaskCacheService>
+		<MonitoringService>
 			<messageTimeout>120000</messageTimeout>
 			<operationCapabilities>snmp,ssh</operationCapabilities>
 			<fetchTSSTaskInterval>2000</fetchTSSTaskInterval>
 			<concurrentWorkflows>2</concurrentWorkflows>
 			<jmxObjectName>secpro:type=MonitoringService</jmxObjectName>
-		</monitoringService>
+		</MonitoringService>
+		<MetricUploadService>
+			<!--uploadMode:directly/pool -->
+			<uploadMode>pool</uploadMode>
+			<isUploadMetricInPackage>true</isUploadMetricInPackage>
+			<minLimitPackageSiz>1024</minLimitPackageSiz>
+			<maxLimitPackageSize>5120</maxLimitPackageSize>
+		</MetricUploadService>
 		<StorageAdapterService>
 			<storageType>com.secpro.platform.monitoring.agent.storages.http.HTTPStorageAdapter</storageType>
 		</StorageAdapterService>
@@ -21,5 +38,11 @@
 		<MonitoringNodeService>
 			<nodeLocation>HB</nodeLocation>
 		</MonitoringNodeService>
+		<SysLogBeaconInterface>
+			<sysLogPath>/home/baiyanwei/secpro/project/run/syslog</sysLogPath>
+			<sysLogMax>50</sysLogMax>
+			<sysLogListenerPort>8514</sysLogListenerPort>
+			<sysLogName>syslog</sysLogName>
+		</SysLogBeaconInterface>
 	</services>
 </mca>	
