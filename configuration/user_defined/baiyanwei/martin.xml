@@ -29,9 +29,9 @@
 		</StorageAdapterService>
 		<HTTPStorageAdapter>
 			<hostName>localhost</hostName>
-			<hostPort>8888</hostPort>
-			<fetchTaskPath>/samples/fetch</fetchTaskPath>
-			<pushSamplePath>/samples/push</pushSamplePath>
+			<hostPort>8080</hostPort>
+			<fetchTaskPath>/tss/samples/fetch</fetchTaskPath>
+			<pushSamplePath>/tss/samples/push</pushSamplePath>
 			<userName>MCA</userName>
 			<passWord>123456</passWord>
 		</HTTPStorageAdapter>
