@@ -38,6 +38,11 @@
 		<MonitoringNodeService>
 			<nodeLocation>HB</nodeLocation>
 		</MonitoringNodeService>
+		<MetricStandardService>
+			<hostName>localhost</hostName>
+			<hostPort>8080</hostPort>
+			<fetchStandardRulesPath>/tss/standard/fetch</fetchStandardRulesPath>
+		</MetricStandardService>
 		<SysLogBeaconInterface>
 			<sysLogPath>/home/baiyanwei/secpro/project/run/syslog</sysLogPath>
 			<sysLogMax>50</sysLogMax>
