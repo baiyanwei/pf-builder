@@ -8,11 +8,11 @@
 			<taskExecSec>0</taskExecSec>
 			<taskNameTimeFormat1>yyyyMMdd</taskNameTimeFormat1>
 			<taskNameTimeFormat2>yyyyMMddHHmmss</taskNameTimeFormat2>
-			<taskTimerExecuteInterval>120000</taskTimerExecuteInterval>
+			<taskTimerExecuteInterval>86400000</taskTimerExecuteInterval>
 		</MonitoringTaskCacheService>
 		<MonitoringService>
 			<messageTimeout>120000</messageTimeout>
-			<operationCapabilities>snmp,ssh</operationCapabilities>
+			<operationCapabilities>snmp,ssh,telnet</operationCapabilities>
 			<fetchTSSTaskInterval>2000</fetchTSSTaskInterval>
 			<concurrentWorkflows>2</concurrentWorkflows>
 			<jmxObjectName>secpro:type=MonitoringService</jmxObjectName>
@@ -21,8 +21,8 @@
 			<!--uploadMode:directly/pool -->
 			<uploadMode>pool</uploadMode>
 			<isUploadMetricInPackage>true</isUploadMetricInPackage>
-			<minLimitPackageSiz>1024</minLimitPackageSiz>
-			<maxLimitPackageSize>5120</maxLimitPackageSize>
+			<minLimitPackageSiz>10240</minLimitPackageSiz>
+			<maxLimitPackageSize>512000</maxLimitPackageSize>
 		</MetricUploadService>
 		<StorageAdapterService>
 			<storageType>com.secpro.platform.monitoring.agent.storages.http.HTTPStorageAdapter</storageType>
