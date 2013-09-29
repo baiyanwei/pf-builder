@@ -1,13 +1,8 @@
 <mca>
 	<services>
 		<MonitoringTaskCacheService>
-			<taskPath>/home/baiyanwei/secpro/project/run/task/</taskPath>
-			<prefixTaskName>task</prefixTaskName>
-			<taskExecuteHour>21</taskExecuteHour>
-			<taskExecMin>45</taskExecMin>
-			<taskExecSec>0</taskExecSec>
-			<taskNameTimeFormat1>yyyyMMdd</taskNameTimeFormat1>
-			<taskNameTimeFormat2>yyyyMMddHHmmss</taskNameTimeFormat2>
+			<taskCacheFile>/home/baiyanwei/secpro/project/run/task/taskCache.list</taskCacheFile>
+			<waitUploadSampleLocalPath>/home/baiyanwei/secpro/project/run/waitupload/</waitUploadSampleLocalPath>
 			<taskTimerExecuteInterval>86400000</taskTimerExecuteInterval>
 		</MonitoringTaskCacheService>
 		<MonitoringService>
