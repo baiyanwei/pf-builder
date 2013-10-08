@@ -10,7 +10,7 @@
 			<operationCapabilities>snmp,ssh,telnet</operationCapabilities>
 			<fetchTSSTaskInterval>2000</fetchTSSTaskInterval>
 			<concurrentWorkflows>2</concurrentWorkflows>
-			<jmxObjectName>secpro:type=MonitoringService</jmxObjectName>
+			<jmxObjectName>secpro.mca:type=MonitoringService</jmxObjectName>
 		</MonitoringService>
 		<MetricUploadService>
 			<!--uploadMode:directly/pool -->
