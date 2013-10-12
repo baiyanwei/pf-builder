@@ -23,12 +23,16 @@
 			<storageType>com.secpro.platform.monitoring.agent.storages.http.HTTPStorageAdapter</storageType>
 		</StorageAdapterService>
 		<HTTPStorageAdapter>
-			<hostName>localhost</hostName>
-			<hostPort>8080</hostPort>
-			<fetchTaskPath>/tss/samples/fetch</fetchTaskPath>
-			<pushSamplePath>/tss/samples/push</pushSamplePath>
-			<userName>MCA</userName>
-			<passWord>123456</passWord>
+			<fetchTaskClient>
+				<endPointHost>localhost</endPointHost>
+				<endPointPort>8080</endPointPort>
+				<endPointPath>/tss/samples/fetch</endPointPath>
+			</fetchTaskClient>
+			<pushSampleClient>
+				<endPointHost>localhost</endPointHost>
+				<endPointPort>8080</endPointPort>
+				<endPointPath>/tss/samples/push</endPointPath>
+			</pushSampleClient>
 		</HTTPStorageAdapter>
 		<MonitoringNodeService>
 			<nodeLocation>HB</nodeLocation>
