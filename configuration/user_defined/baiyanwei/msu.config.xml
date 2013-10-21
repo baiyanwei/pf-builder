@@ -1,0 +1,25 @@
+<app>
+	<msu>
+		<services>
+			<TaskScheduleCoreService>
+				<taskCacheFile>/home/baiyanwei/secpro/project/run/task/taskCache.list</taskCacheFile>
+				<waitUploadSampleLocalPath>/home/baiyanwei/secpro/project/run/waitupload/</waitUploadSampleLocalPath>
+				<taskTimerExecuteInterval>86400000</taskTimerExecuteInterval>
+			</TaskScheduleCoreService>
+		</services>
+	</msu>
+	<platform>
+		<services>
+			<DataBaseStorageService>
+				<driverClass>oracle.jdbc.driver.OracleDriver</driverClass>
+				<jdbcUrl>jdbc:oracle:thin:@192.168.18.161:1521:orcl</jdbcUrl>
+				<user>secpro111</user>
+				<password>secpro111</password>
+				<initialPoolSize>20</initialPoolSize>
+				<maxIdleTime>5</maxIdleTime>
+				<maxPoolSize>20</maxPoolSize>
+				<minPoolSize>5</minPoolSize>
+			</DataBaseStorageService>
+		</services>
+	</platform>
+</app>
