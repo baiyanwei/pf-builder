@@ -1,5 +1,5 @@
 prompt PL/SQL Developer import file
-prompt Created on 2013Äê10ÔÂ29ÈÕ by oracle
+prompt Created on 2013å¹´10æœˆ29æ—¥ by oracle
 set feedback off
 set define off
 prompt Creating MSU_COMMAND...
@@ -13,17 +13,17 @@ create table MSU_COMMAND
 )
 ;
 comment on table MSU_COMMAND
-  is '²É¼¯ÅäÖÃÃüÁîĞÅÏ¢±í';
+  is 'é‡‡é›†é…ç½®å‘½ä»¤ä¿¡æ¯è¡¨';
 comment on column MSU_COMMAND.id
   is 'id';
 comment on column MSU_COMMAND.open_command
-  is '¿ªÆôÃüÁî';
+  is 'å¼€å¯å‘½ä»¤';
 comment on column MSU_COMMAND.command
-  is 'Ö´ĞĞÃüÁî';
+  is 'æ‰§è¡Œå‘½ä»¤';
 comment on column MSU_COMMAND.cdate
-  is 'Èë¿âÊ±¼ä';
+  is 'å…¥åº“æ—¶é—´';
 comment on column MSU_COMMAND.type_code
-  is 'Éè±¸ĞÍºÅ';
+  is 'è®¾å¤‡å‹å·';
 alter table MSU_COMMAND
   add constraint MSU_COMMAND_KEY_ID primary key (ID);
 
@@ -37,15 +37,15 @@ create table MSU_OPERTION
 )
 ;
 comment on table MSU_OPERTION
-  is 'Éè±¸ËùÖ§³ÖµÄ²Ù×÷ÀàĞÍssh/telnet,snmpv1/v2c/v3';
+  is 'è®¾å¤‡æ‰€æ”¯æŒçš„æ“ä½œç±»å‹ssh/telnet,snmpv1/v2c/v3';
 comment on column MSU_OPERTION.id
   is 'id';
 comment on column MSU_OPERTION.operation_name
-  is '²Ù×÷Ãû³Æ';
+  is 'æ“ä½œåç§°';
 comment on column MSU_OPERTION.operation_desc
-  is '²Ù×÷ÃèÊö';
+  is 'æ“ä½œæè¿°';
 comment on column MSU_OPERTION.type_code
-  is 'Éè±¸ĞÍºÅ±àÂë';
+  is 'è®¾å¤‡å‹å·ç¼–ç ';
 alter table MSU_OPERTION
   add constraint MSU_OPERTION_KEY_ID primary key (ID);
 
@@ -70,44 +70,44 @@ create table MSU_RES_AUTH
 )
 ;
 comment on table MSU_RES_AUTH
-  is '·À»ğÇ½ÈÏÖ¤ĞÅÏ¢±í';
+  is 'é˜²ç«å¢™è®¤è¯ä¿¡æ¯è¡¨';
 comment on column MSU_RES_AUTH.id
   is 'id';
 comment on column MSU_RES_AUTH.username
-  is 'ÓÃ»§Ãû';
+  is 'ç”¨æˆ·å';
 comment on column MSU_RES_AUTH.password
-  is 'ÃÜÂë';
+  is 'å¯†ç ';
 comment on column MSU_RES_AUTH.user_prompt
-  is 'ÓÃ»§ÃûÌáÊ¾×Ö·û´®';
+  is 'ç”¨æˆ·åæç¤ºå­—ç¬¦ä¸²';
 comment on column MSU_RES_AUTH.pass_prompt
-  is 'ÃÜÂëÌáÊ¾×Ö·û´®';
+  is 'å¯†ç æç¤ºå­—ç¬¦ä¸²';
 comment on column MSU_RES_AUTH.prompt
-  is 'ÃüÁîÌáÊ¾·û';
+  is 'å‘½ä»¤æç¤ºç¬¦';
 comment on column MSU_RES_AUTH.exec_prompt
-  is 'Ö´ĞĞÃüÁîÌáÊ¾·û';
+  is 'æ‰§è¡Œå‘½ä»¤æç¤ºç¬¦';
 comment on column MSU_RES_AUTH.next_prompt
-  is '·­Ò³ÃüÁîÌáÊ¾·û';
+  is 'ç¿»é¡µå‘½ä»¤æç¤ºç¬¦';
 comment on column MSU_RES_AUTH.community
-  is 'ÍÅÌåÃû';
+  is 'å›¢ä½“å';
 comment on column MSU_RES_AUTH.snmpv3_user
-  is 'V3°æ±¾ÓÃ»§Ãû';
+  is 'V3ç‰ˆæœ¬ç”¨æˆ·å';
 comment on column MSU_RES_AUTH.snmpv3_auth
-  is 'ÈÏÖ¤Ëã·¨';
+  is 'è®¤è¯ç®—æ³•';
 comment on column MSU_RES_AUTH.snmpv3_authpass
-  is 'ÈÏÖ¤ÃÜÔ¿';
+  is 'è®¤è¯å¯†é’¥';
 comment on column MSU_RES_AUTH.snmpv3_priv
-  is '¼ÓÃÜËã·¨';
+  is 'åŠ å¯†ç®—æ³•';
 comment on column MSU_RES_AUTH.snmpv3_privpass
-  is '¼ÓÃÜÃÜÔ¿';
+  is 'åŠ å¯†å¯†é’¥';
 comment on column MSU_RES_AUTH.res_id
-  is '×ÊÔ´ID';
+  is 'èµ„æºID';
 alter table MSU_RES_AUTH
   add constraint MSU_RES_AUTH_KEY_ID primary key (ID);
 
 prompt Creating MSU_SCHEDULE...
 create table MSU_SCHEDULE
 (
-  id                  VARCHAR2(50) not null,
+  task_id                  VARCHAR2(50) not null,
   schedule_id         VARCHAR2(50) not null,
   schedule_point      NUMBER(20) not null,
   create_at           NUMBER(20) not null,
@@ -119,25 +119,25 @@ create table MSU_SCHEDULE
 )
 ;
 comment on table MSU_SCHEDULE
-  is 'ÈÎÎñµ÷¶ÈÖ´ĞĞ±í';
+  is 'ä»»åŠ¡è°ƒåº¦æ‰§è¡Œè¡¨';
 comment on column MSU_SCHEDULE.id
-  is 'ÈÎÎñ±êÊ¶ID';
+  is 'ä»»åŠ¡æ ‡è¯†ID';
 comment on column MSU_SCHEDULE.schedule_id
-  is 'ÈÎÎñµ÷¶ÈID';
+  is 'ä»»åŠ¡è°ƒåº¦ID';
 comment on column MSU_SCHEDULE.schedule_point
-  is 'µ÷¶ÈÊ±¼ä';
+  is 'è°ƒåº¦æ—¶é—´';
 comment on column MSU_SCHEDULE.create_at
-  is 'Èë¿âÊ±¼ä';
+  is 'å…¥åº“æ—¶é—´';
 comment on column MSU_SCHEDULE.fetch_at
-  is '»ñÈ¡Ê±¼ä';
+  is 'è·å–æ—¶é—´';
 comment on column MSU_SCHEDULE.execute_at
-  is 'Ö´ĞĞÊ±¼ä';
+  is 'æ‰§è¡Œæ—¶é—´';
 comment on column MSU_SCHEDULE.execute_cost
-  is 'Ö´ĞĞÊ±³¤';
+  is 'æ‰§è¡Œæ—¶é•¿';
 comment on column MSU_SCHEDULE.execute_status
-  is 'Ö´ĞĞÇé¿ö';
+  is 'æ‰§è¡Œæƒ…å†µ';
 comment on column MSU_SCHEDULE.execute_description
-  is 'Ö´ĞĞÃèÊö';
+  is 'æ‰§è¡Œæè¿°';
 alter table MSU_SCHEDULE
   add constraint MSU_SCHEDULE_KEY_ID primary key (ID, SCHEDULE_ID);
 
@@ -155,21 +155,21 @@ create table MSU_TASK
 )
 ;
 comment on table MSU_TASK
-  is 'ÈÎÎñĞÅÏ¢±í';
+  is 'ä»»åŠ¡ä¿¡æ¯è¡¨';
 comment on column MSU_TASK.id
-  is 'ÈÎÎñ±êÊ¶ID';
+  is 'ä»»åŠ¡æ ‡è¯†ID';
 comment on column MSU_TASK.region
-  is 'Ê¡ÊĞÏØ±àÂë';
+  is 'çœå¸‚å¿ç¼–ç ';
 comment on column MSU_TASK.create_at
-  is '´´½¨Ê±¼ä';
+  is 'åˆ›å»ºæ—¶é—´';
 comment on column MSU_TASK.schedule
-  is 'µ÷¶È¹æÔò';
+  is 'è°ƒåº¦è§„åˆ™';
 comment on column MSU_TASK.operation
-  is 'ÈÎÎñ²Ù×÷';
+  is 'ä»»åŠ¡æ“ä½œ';
 comment on column MSU_TASK.content
-  is 'ÈÎÎñÄÚÈİ';
+  is 'ä»»åŠ¡å†…å®¹';
 comment on column MSU_TASK.res_id
-  is '×ÊÔ´ID';
+  is 'èµ„æºID';
 comment on column MSU_TASK.is_realtime
   is 'realtime';
 alter table MSU_TASK
