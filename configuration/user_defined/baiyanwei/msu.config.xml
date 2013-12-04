@@ -1,11 +1,21 @@
 <app>
 	<msu>
 		<services>
+			<NodeService>
+				<nodeRegion>MSU_CENTER</nodeRegion>
+			</NodeService>
+			<MetricsScheduleUnitService>
+			</MetricsScheduleUnitService>
 			<TaskScheduleCoreService>
 				<taskCacheFile>/home/baiyanwei/secpro/project/run/task/taskCache.list</taskCacheFile>
 				<waitUploadSampleLocalPath>/home/baiyanwei/secpro/project/run/waitupload/</waitUploadSampleLocalPath>
 				<taskTimerExecuteInterval>86400000</taskTimerExecuteInterval>
 			</TaskScheduleCoreService>
+			<ManagementMessageService>
+				<mqURL>tcp://192.168.18.16:61616</mqURL>
+				<mqUserName>system</mqUserName>
+				<mqPasswd>manager</mqPasswd>
+			</ManagementMessageService>
 		</services>
 	</msu>
 	<platform>
@@ -13,8 +23,8 @@
 			<DataBaseStorageService>
 				<driverClass>oracle.jdbc.driver.OracleDriver</driverClass>
 				<jdbcUrl>jdbc:oracle:thin:@192.168.18.161:1521:orcl</jdbcUrl>
-				<user>secpro111</user>
-				<password>secpro111</password>
+				<user>secpro</user>
+				<password>secpro</password>
 				<initialPoolSize>20</initialPoolSize>
 				<maxIdleTime>5</maxIdleTime>
 				<maxPoolSize>20</maxPoolSize>
