@@ -5,7 +5,11 @@
 				<nodeRegion>MSU_CENTER</nodeRegion>
 			</NodeService>
 			<MetricsScheduleUnitService>
+				<scheduleTimerExecuteInterval>5000</scheduleTimerExecuteInterval>
 			</MetricsScheduleUnitService>
+			<ScheduleCoreService>
+				<updateSizeBatchSize>1</updateSizeBatchSize>
+			</ScheduleCoreService>
 			<TaskScheduleCoreService>
 				<taskCacheFile>/home/baiyanwei/secpro/project/run/task/taskCache.list</taskCacheFile>
 				<waitUploadSampleLocalPath>/home/baiyanwei/secpro/project/run/waitupload/</waitUploadSampleLocalPath>
