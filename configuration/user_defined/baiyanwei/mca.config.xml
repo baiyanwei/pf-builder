@@ -41,7 +41,6 @@
 			<hostName>localhost</hostName>
 			<hostPort>8901</hostPort>
 			<fetchStandardRulesPath>/msu/syslog/standard/fetch</fetchStandardRulesPath>
-			<callbackPath>http://localhost:8092/</callbackPath>
 		</MetricStandardService>
 		<SysLogBeaconInterface>
 			<sysLogPath>/home/baiyanwei/secpro/project/run/syslog</sysLogPath>
