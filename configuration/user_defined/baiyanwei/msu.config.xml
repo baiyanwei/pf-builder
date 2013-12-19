@@ -5,7 +5,7 @@
 				<nodeRegion>MSU_CENTER</nodeRegion>
 			</NodeService>
 			<MetricsScheduleUnitService>
-				<scheduleTimerExecuteInterval>5000</scheduleTimerExecuteInterval>
+				<scheduleTimerExecuteInterval>1800000</scheduleTimerExecuteInterval>
 			</MetricsScheduleUnitService>
 			<ScheduleCoreService>
 				<updateSizeBatchSize>1</updateSizeBatchSize>
