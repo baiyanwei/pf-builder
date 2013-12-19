@@ -4,6 +4,7 @@
 			<taskCacheFile>/home/baiyanwei/secpro/project/run/task/taskCache.list</taskCacheFile>
 			<waitUploadSampleLocalPath>/home/baiyanwei/secpro/project/run/waitupload/</waitUploadSampleLocalPath>
 			<taskTimerExecuteInterval>86400000</taskTimerExecuteInterval>
+			<uploadCacheSampleInerval>20000</uploadCacheSampleInerval>
 		</MonitoringTaskCacheService>
 		<MonitoringService>
 			<messageTimeout>120000</messageTimeout>
@@ -35,7 +36,7 @@
 			</pushSampleClient>
 		</HTTPStorageAdapter>
 		<MonitoringNodeService>
-			<nodeLocation>0311</nodeLocation>
+			<nodeLocation>1000</nodeLocation>
 		</MonitoringNodeService>
 		<MetricStandardService>
 			<hostName>localhost</hostName>
