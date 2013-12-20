@@ -12,6 +12,7 @@
 			<fetchTSSTaskInterval>2000</fetchTSSTaskInterval>
 			<concurrentWorkflows>2</concurrentWorkflows>
 			<jmxObjectName>secpro.mca:type=MonitoringService</jmxObjectName>
+			<mcaName>MCA-1000-02</mcaName>
 		</MonitoringService>
 		<MetricUploadService>
 			<!--uploadMode:directly/pool -->
@@ -36,7 +37,7 @@
 			</pushSampleClient>
 		</HTTPStorageAdapter>
 		<MonitoringNodeService>
-			<nodeLocation>1000</nodeLocation>
+			<nodeLocation>5000</nodeLocation>
 		</MonitoringNodeService>
 		<MetricStandardService>
 			<hostName>localhost</hostName>
